@@ -1,0 +1,130 @@
+html {
+	background-color: #F8F8F8;
+	font-family: 'TT Lakes';
+}
+.sideMenu {
+	padding: 16px;
+}
+.sideMenu__slider {
+	display: flex;
+	overflow-x: scroll;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+	padding-left: 16px;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+	button {
+		border: 0;
+		font-size: 16px;
+		line-height: 24px;
+		background-color: #F8F8F8;
+		letter-spacing: -0.2px;
+		color: #7E7E82;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		margin-right: 10px;
+	}
+	>.sideMenu__slider--rbrands {
+		background-color: white;
+		border: 2px solid #B8FFEC;
+		border-radius: 6px;
+	}
+}
+.sideMenu__about-us--picture {
+	display: flex;
+	overflow: hidden;
+}
+.sideMenu__repair {
+	display: none;
+}
+.sideMenu__search {
+	display: none;
+}
+.sideMenu__about-us--text {
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.2px;
+	height: 90px;
+	overflow: hidden;
+	color: #1B1C21;
+}
+.sideMenu__about-us--readmore {
+	padding-left: 24px;
+}
+.sideMenu__about-us--readmore--button {
+	border: 0;
+	font-family: 'TT Lakes';
+	font-size: 16px;
+	line-height: 24px;
+	background-color: #F8F8F8;
+	padding: 16px;
+	letter-spacing: -0.2px;
+	color: #1B1C21;
+}
+.sideMenu__name {
+	border-left: 4px solid #41F6D7;
+	margin-left: -16px;
+	padding-left: 16px;
+}
+@media (min-width : 768px) {
+	.sideMenu {
+		padding: 16px 24px;
+	}
+	.sideMenu__about-us {
+		position: relative;
+	}
+	.sideMenu__about-us--text {
+		display: block;
+		width: 42%;
+		height: 160px;
+		line-height: 20px;
+	}
+	.sideMenu__about-us--picture {
+		width: 50%;
+		position: absolute;
+		right: 0;
+		top: -10px;
+		img {
+			width: 360px;
+		}
+	}
+	.sideMenu__name {
+		border-left: 4px solid #41F6D7;
+		margin-left: -24px;
+		padding-left: 24px;
+	}
+}
+@media (min-width : 1120px) {
+	.sideMenu__repair {
+		display: block;
+		position: absolute;
+		top: 42px;
+		right: 32px;
+	}
+	.sideMenu__search {
+		display: block;
+		position: absolute;
+		top: 42px;
+		right: 232px;
+	}
+	.sideMenu__repair--button {
+		display: flex;
+		align-items: center;
+		img {
+			padding-left: 9px;
+		}
+	}
+	.sideMenu__search--button {
+		display: flex;
+		align-items: center;
+		img {
+			padding-left: 9px;
+		}
+	}
+	.sideMenu__about-us--picture {
+		img {
+			width: 520px;
+		}
+	}
+}
