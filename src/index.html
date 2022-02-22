@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>CPS</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__left-group">
+            <div class="header__burger">
+                <nav>
+                    <a href="#popup" class="header__burger--button popup-link">
+                        <img class="popup-link" src="images/navigation.png" alt="Nav">
+                    </a>
+                </nav>
+            </div>
+            <div class="header__logo">
+                <div class="header__logo--image">
+                    <img src="images/Group.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+        <div class="header__center-group">
+            <div class="header__phone">
+                <a href="#mCall" class="header__call--button popup-link">
+                    <img src="images/call.png" alt="call" class="popup-link">
+                </a>
+            </div>
+            <div class="header__feedback">
+                <a href="#popupRs" class="header__chat--button popup-link">
+                    <img src="images/chat.png" alt="chat" class="popup-link">
+                </a>
+            </div>
+            <div class="header__profile">
+                <a class="header__profile--button">
+                    <img src="images/profile.png" alt="profile">
+                </a>
+            </div>
+        </div>
+        <div class="header__right-group">
+            <div class="header__repair">
+                <a class="header__repair--button separator__vertical">
+                    <img src="images/repair.png" alt="repair">
+                </a>
+            </div>
+            <div class="header__search">
+                <a class="header__checkstatus--button">
+                    <img src="images/checkstatus.png" alt="check">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="sideMenu">
+            <h1 class="sideMenu__name">Услуги и сервисы</h1>
+            <div class="sideMenu__repair">
+                <a class="sideMenu__repair--button">Оставить заявку
+                    <img src="images/repair.png" alt="repair">
+                </a>
+            </div>
+            <div class="sideMenu__search">
+                <a class="sideMenu__search--button">Статус ремонта
+                    <img src="images/checkstatus.png" alt="check">
+                </a>
+            </div>
+            <div class="sideMenu__slider">
+                <button class="sideMenu__slider--rbrands">Ремонтируемые бренды</button>
+                <button class="sideMenu__slider--rdevices">Ремонтируемые устройства</button>
+                <button class="sideMenu__slider--prices">Цены на услуги</button>
+                <button class="sideMenu__slider--adress">Адреса сервисных центров</button>
+                <button class="sideMenu__slider--specialprices">Специальные цены</button>
+                <button class="sideMenu__slider--feedback">Отзывы</button>
+            </div>
+            <div class="sideMenu__about-us">
+                <div class="sideMenu__about-us--text" id="content">
+                    Мы являемся авторизованным сервисным центром по ремонту
+                    техники
+                    Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
+                    производителя.<br><br>
+
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                    большое
+                    количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                    очередь, советуют нас родным и близким.
+                </div>
+                    <div class="sideMenu__about-us--readmore">
+                        <img src="images/icon.png" alt="icon">
+                        <button type="button" onclick="document.getElementById('content').style.height='auto'"
+                            class="sideMenu__about-us--readmore--button">Читать далее</button>
+                    </div>
+               
+                <div class="sideMenu__about-us--picture">
+                    <img src="images/1.jpg" alt="CPS.jpg">
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
